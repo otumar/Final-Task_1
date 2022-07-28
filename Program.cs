@@ -1,4 +1,4 @@
-﻿void ReducedArray (string [] array1, string [] array2, int MaxLenght)
+﻿void ArrayOfStringsUnderGivenSise (string [] array1, string [] array2, int MaxLenght)
 {
     int count = 0;
     for (int i = 0; i < array1.Length; i++)
@@ -15,7 +15,7 @@ void PrintArray (string [] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        System.Console.Write($" {array [i]} ");
+        System.Console.Write($"{array [i]} ");
     }
 System.Console.WriteLine();
 }
@@ -23,5 +23,7 @@ System.Console.WriteLine();
 string [] array1  = new string [] {"one", "two", "three",  "four"};
 string [] array2 = new string [array1.Length];
 int MaxLenght = 3;
-ReducedArray (array1, array2, MaxLenght);
+ArrayOfStringsUnderGivenSise (array1, array2, MaxLenght);
+
+System.Console.WriteLine($"An array of strings whose length is less then {MaxLenght}:");
 PrintArray (array2);
